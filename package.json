@@ -1,8 +1,15 @@
 {
+  "name": "fed22-testing-e2e-excersices",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.0",
-    "@parcel/transformer-typescript-tsc": "^2.8.0",
-    "@parcel/validator-typescript": "^2.8.0",
-    "parcel": "^2.8.0"
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2"
   }
 }

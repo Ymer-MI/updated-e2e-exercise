@@ -1,7 +1,7 @@
 import { addTodo, changeTodo, removeAllTodos } from "./functions";
 import { Todo } from "./models/Todo";
 
-let todos: Todo[] = JSON.parse(localStorage.getItem("todos") || "[]");
+let todos: Todo[] = JSON.parse(localStorage.getItem("todos") ?? "[]");
 
 document.getElementById("clearTodos")?.addEventListener("click", () => {
   clearTodos(todos);
@@ -81,4 +81,6 @@ function clearTodos(todos: Todo[]) {
   createHtml(todos);
 }
 
-createHtml(todos);
+export default () => {
+  createHtml(todos);
+}
