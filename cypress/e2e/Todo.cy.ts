@@ -10,6 +10,5 @@ describe('Todo App', () => {
         button.click()
 
         cy.get('#todos').children().should('have.length', 1).first().should('have.text', 'New Todo').and('have.class', 'todo__text').and('not.have.class', 'todo__text--done')
-
     })
 })
